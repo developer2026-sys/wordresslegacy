@@ -1,4 +1,7 @@
 {
+  "redirects": [
+    { "source": "/app/", "destination": "/app", "permanent": false }
+  ],
   "rewrites": [
     { "source": "/app", "destination": "https://legacyfrontend.vercel.app/app" },
     { "source": "/app/assets/:path*", "destination": "https://legacyfrontend.vercel.app/app/assets/:path*" },
