@@ -1,11 +1,31 @@
 {
   "redirects": [
-    { "source": "/app/", "destination": "/app", "permanent": false }
+    {
+      "source": "/app/",
+      "destination": "/app",
+      "permanent": false
+    }
   ],
   "rewrites": [
-    { "source": "/app", "destination": "https://legacyfrontend.vercel.app/app" },
-    { "source": "/app/assets/:path*", "destination": "https://legacyfrontend.vercel.app/app/assets/:path*" },
-    { "source": "/app/:path*", "destination": "https://legacyfrontend.vercel.app/app/:path*" },
-    { "source": "/api/:path*", "destination": "https://legacybackend.vercel.app/api/:path*" }
+    {
+      "source": "/api/llc-funeral-homes",
+      "destination": "/api/llc-funeral-homes"
+    },
+    {
+      "source": "/app",
+      "destination": "https://legacyfrontend.vercel.app/app"
+    },
+    {
+      "source": "/app/assets/:path*",
+      "destination": "https://legacyfrontend.vercel.app/app/assets/:path*"
+    },
+    {
+      "source": "/app/:path*",
+      "destination": "https://legacyfrontend.vercel.app/app/:path*"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://legacybackend.vercel.app/api/:path*"
+    }
   ]
 }
