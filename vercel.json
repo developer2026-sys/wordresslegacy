@@ -4,6 +4,11 @@
       "source": "/app/",
       "destination": "/app",
       "permanent": false
+    },
+    {
+      "source": "/demo/",
+      "destination": "/demo",
+      "permanent": false
     }
   ],
   "rewrites": [
@@ -13,19 +18,27 @@
     },
     {
       "source": "/app",
-      "destination": "https://legacyfrontend.vercel.app/app"
-    },
-    {
-      "source": "/app/assets/:path*",
-      "destination": "https://legacyfrontend.vercel.app/app/assets/:path*"
+      "destination": "https://llc-portal-web.vercel.app/app"
     },
     {
       "source": "/app/:path*",
-      "destination": "https://legacyfrontend.vercel.app/app/:path*"
+      "destination": "https://llc-portal-web.vercel.app/app/:path*"
     },
     {
       "source": "/api/:path*",
-      "destination": "https://legacybackend.vercel.app/api/:path*"
+      "destination": "https://llc-portal-api.vercel.app/api/:path*"
+    },
+    {
+      "source": "/demo",
+      "destination": "https://llc-demo-web.vercel.app/demo"
+    },
+    {
+      "source": "/demo/:path*",
+      "destination": "https://llc-demo-web.vercel.app/demo/:path*"
+    },
+    {
+      "source": "/demo-api/:path*",
+      "destination": "https://llc-demo-api.vercel.app/api/:path*"
     }
   ]
 }
